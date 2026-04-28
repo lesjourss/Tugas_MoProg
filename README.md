@@ -1,6 +1,7 @@
-File ini berisi program untuk tugas Student Registraation Form 
+Repo ini berisi program untuk tugas Student Registration Form mata kuliah MOBILE PROGRAMMING-AL
 
-2411501865 Zahfandhika Fauzan Maldini
+2411501865 Zahfandhika Fauzan Maldini,
+2411501642 Raden Ezra Rahmaditya
 
 1. Form Input
 <img width="413" height="869" alt="image" src="https://github.com/user-attachments/assets/69ac7c29-e59b-44df-8f3e-04d1402ce067" />
