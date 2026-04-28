@@ -1,6 +1,6 @@
 Repo ini berisi program untuk tugas Student Registration Form mata kuliah MOBILE PROGRAMMING-AL
 
-2411501865 Zahfandhika Fauzan Maldini,
+2411501865 Zahfandhika Fauzan Maldini<br><br>
 2411501642 Raden Ezra Rahmaditya
 
 1. Form Input
