@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/bl_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Student Registration Form"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fullname"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/txt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter Fullname"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter Address"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jurusan"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <Spinner
+            android:id="@+id/spinner_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_spinner"
+            android:paddingStart="12dp"
+            android:paddingEnd="40dp"
+            android:spinnerMode="dropdown"/>
+        <TextView
+            android:id="@+id/tv_error_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="Silakan pilih Jurusan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"/>
+        <RadioGroup
+            android:id="@+id/rg_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_genap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genap 2025/2026" />
+            <RadioButton
+                android:id="@+id/rb_gasal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gasal 2025/2026" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tv_error_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="Silakan pilih Semester"/>
+
+        <CheckBox
+            android:id="@+id/cb_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Saya menyetujui data yang diinput" />
+        <TextView
+            android:id="@+id/tv_error_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="Anda harus menyetujui agreement"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_button"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            app:cornerRadius="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_result_card"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data yang Didaftarkan:"
+                android:textColor="@color/result_header"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Nama" android:layout_width="100dp" android:textColor="@android:color/black" android:textStyle="bold" android:textSize="15sp"/>
+                    <TextView android:id="@+id/res_nama" android:text=": -" android:textColor="@android:color/black" android:textSize="15sp"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Email" android:layout_width="100dp" android:textColor="@android:color/black" android:textStyle="bold" android:textSize="15sp"/>
+                    <TextView android:id="@+id/res_email" android:text=": -" android:textColor="@android:color/black" android:textSize="15sp"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Address" android:layout_width="100dp" android:textColor="@android:color/black" android:textStyle="bold" android:textSize="15sp"/>
+                    <TextView android:id="@+id/res_address" android:text=": -" android:textColor="@android:color/black" android:textSize="15sp"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Jurusan" android:layout_width="100dp" android:textColor="@android:color/black" android:textStyle="bold" android:textSize="15sp"/>
+                    <TextView android:id="@+id/res_jurusan" android:text=": -" android:textColor="@android:color/black" android:textSize="15sp"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Semester" android:layout_width="100dp" android:textColor="@android:color/black" android:textStyle="bold" android:textSize="15sp"/>
+                    <TextView android:id="@+id/res_semester" android:text=": -" android:textColor="@android:color/black" android:textSize="15sp"/>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

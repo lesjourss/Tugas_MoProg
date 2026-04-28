@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudentLab</string>
+    <string-array name="jurusan_array">
+        <item>--Pilih Jurusan--</item>
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Ilmu Komputer</item>
+    </string-array>
+</resources>
